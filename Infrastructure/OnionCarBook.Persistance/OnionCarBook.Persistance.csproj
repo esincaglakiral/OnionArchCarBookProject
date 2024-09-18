@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Core\OnionCarBook.Application\OnionCarBook.Application.csproj" />
     <ProjectReference Include="..\..\Core\OnionCarBook.Domain\OnionCarBook.Domain.csproj" />
   </ItemGroup>
 

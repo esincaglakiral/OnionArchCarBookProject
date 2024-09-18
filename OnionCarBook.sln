@@ -9,11 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionCarBook.Domain", "Core
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{78B45F92-068D-4765-A1D9-169FBDAE7614}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionCarBook.Persistance", "Infrastructure\OnionCarBook.Persistance\OnionCarBook.Persistance.csproj", "{34AD437E-2B7A-40B0-A9D1-DA1FFD328871}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionCarBook.Persistance", "Infrastructure\OnionCarBook.Persistance\OnionCarBook.Persistance.csproj", "{34AD437E-2B7A-40B0-A9D1-DA1FFD328871}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{4B8687A7-3AEE-4F55-B7E8-8C87F47733C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionCarBook.WebApi", "Presentation\OnionCarBook.WebApi\OnionCarBook.WebApi.csproj", "{316973C7-7E4E-4784-97BA-AA247D8F9876}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionCarBook.WebApi", "Presentation\OnionCarBook.WebApi\OnionCarBook.WebApi.csproj", "{316973C7-7E4E-4784-97BA-AA247D8F9876}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionCarBook.Application", "Core\OnionCarBook.Application\OnionCarBook.Application.csproj", "{C13877DD-1B5F-40F7-BC00-282387A42619}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{316973C7-7E4E-4784-97BA-AA247D8F9876}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{316973C7-7E4E-4784-97BA-AA247D8F9876}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{316973C7-7E4E-4784-97BA-AA247D8F9876}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C13877DD-1B5F-40F7-BC00-282387A42619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C13877DD-1B5F-40F7-BC00-282387A42619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C13877DD-1B5F-40F7-BC00-282387A42619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C13877DD-1B5F-40F7-BC00-282387A42619}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{D5A6ED82-972B-4F3D-BA60-0B4DF0F2A522} = {38DFDF19-0DDD-484B-AF28-93016A766BA1}
 		{34AD437E-2B7A-40B0-A9D1-DA1FFD328871} = {78B45F92-068D-4765-A1D9-169FBDAE7614}
 		{316973C7-7E4E-4784-97BA-AA247D8F9876} = {4B8687A7-3AEE-4F55-B7E8-8C87F47733C1}
+		{C13877DD-1B5F-40F7-BC00-282387A42619} = {38DFDF19-0DDD-484B-AF28-93016A766BA1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {06090999-0E7F-424B-ABD2-C54F287D92E9}
