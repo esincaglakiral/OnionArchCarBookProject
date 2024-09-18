@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Mediator\" />
+    <Folder Include="Features\RepositoryPattern\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OnionCarBook.Domain\OnionCarBook.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
