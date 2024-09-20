@@ -3,6 +3,7 @@ using OnionCarBook.Application.Features.CQRS.Handlers.BannerHandlers;
 using OnionCarBook.Application.Features.CQRS.Handlers.BrandHandlers;
 using OnionCarBook.Application.Features.CQRS.Handlers.CarHandlers;
 using OnionCarBook.Application.Features.CQRS.Handlers.CategoryHandlers;
+using OnionCarBook.Application.Features.CQRS.Handlers.ContactHandlers;
 using OnionCarBook.Application.Interfaces;
 using OnionCarBook.Application.Interfaces.CarInterfaces;
 using OnionCarBook.Persistance.Context;
@@ -62,6 +63,17 @@ builder.Services.AddScoped<GetCategoryByIdQueryHandler>();
 builder.Services.AddScoped<CreateCategoryCommandHandler>();
 builder.Services.AddScoped<UpdateCategoryCommandHandler>();
 builder.Services.AddScoped<RemoveCategoryCommandHandler>();
+
+
+
+builder.Services.AddScoped<GetContactQueryHandler>();
+builder.Services.AddScoped<GetContactByIdQueryHandler>();
+builder.Services.AddScoped<CreateContactCommandHandler>();
+builder.Services.AddScoped<UpdateContactCommandHandler>();
+builder.Services.AddScoped<RemoveContactCommandHandler>();
+
+
+
 
 
 builder.Services.AddControllers();
