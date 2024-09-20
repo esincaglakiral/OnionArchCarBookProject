@@ -21,7 +21,7 @@ namespace OnionCarBook.Application.Features.CQRS.Handlers.CarHandlers
 
         public async Task Handle(UpdateCarCommand command)
         {
-            var values = await _repository.GetByIdAsync(command.CarID);
+            var values = await _repository.GetByIdAsync(command.CarID);  // Güncellenecek arabayı getirir.
             values.Fuel = command.Fuel;
             values.Transmission = command.Transmission;
             values.BigImageUrl = command.BigImageUrl;
@@ -31,7 +31,7 @@ namespace OnionCarBook.Application.Features.CQRS.Handlers.CarHandlers
             values.Luggage = command.Luggage;
             values.Model = command.Model;
             values.Seat = command.Seat;
-            await _repository.UpdateAsync(values);
+            await _repository.UpdateAsync(values);  // Güncellenen araba veritabanına kaydedilir.
         }
     }
 }

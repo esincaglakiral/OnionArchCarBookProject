@@ -10,6 +10,9 @@ using OnionCarBook.Persistance.Context;
 using OnionCarBook.Persistance.Repositories;
 using OnionCarBook.Persistance.Repositories.CarRepositories;
 
+using OnionCarBook.Application.Services;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -74,7 +77,7 @@ builder.Services.AddScoped<RemoveContactCommandHandler>();
 
 
 
-
+builder.Services.AddApplicationService(builder.Configuration);  //MediatR kütüphanesini entegre ettik (ServiceRegistiration için) 
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

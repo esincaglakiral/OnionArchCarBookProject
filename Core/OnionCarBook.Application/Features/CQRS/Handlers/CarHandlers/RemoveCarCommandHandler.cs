@@ -15,13 +15,13 @@ namespace OnionCarBook.Application.Features.CQRS.Handlers.CarHandlers
 
         public RemoveCarCommandHandler(IRepository<Car> repository)
         {
-            _repository = repository;
+            _repository = repository; // Repository dependency injection
         }
 
         public async Task Handle(RemoveCarCommand command)
         {
-            var value = await _repository.GetByIdAsync(command.Id);
-            await _repository.RemoveAsync(value);
+            var value = await _repository.GetByIdAsync(command.Id); // Silinecek arabayı getirir.
+            await _repository.RemoveAsync(value); // Arabayı veritabanından siler.
         }
     }
 }

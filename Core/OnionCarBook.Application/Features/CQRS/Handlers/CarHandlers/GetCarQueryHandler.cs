@@ -15,7 +15,7 @@ namespace OnionCarBook.Application.Features.CQRS.Handlers.CarHandlers
 
         public GetCarQueryHandler(IRepository<Car> repository)
         {
-            _repository = repository;
+            _repository = repository; // Repository dependency injection
         }
 
 
@@ -38,3 +38,14 @@ namespace OnionCarBook.Application.Features.CQRS.Handlers.CarHandlers
         }
     }
 }
+
+
+
+
+//MediatR ve CQRS Arasındaki Farklar:
+
+//MediatR bir kütüphane olup, uygulamanızda mediator deseni ile mesajların (komutlar, sorgular, olaylar) işlenmesini sağlar. 
+//Tüm talepler bir "handler" tarafından işlenir.
+
+//CQRS ise bir mimari desen olup, uygulamanızdaki komut ve sorgu işlemlerini birbirinden ayırarak daha ölçeklenebilir 
+//ve yönetilebilir bir yapı sunar. CQRS, veriyi okuma (query) ve yazma (command) işlemlerini ayrı ele alır.

@@ -21,7 +21,7 @@ namespace OnionCarBook.Application.Features.CQRS.Handlers.CarHandlers
 
         public async Task<GetCarByIdQueryResult> Handle(GetCarByIdQuery query)
         {
-            var values = await _repository.GetByIdAsync(query.Id);
+            var values = await _repository.GetByIdAsync(query.Id);  // Belirtilen ID'ye göre arabayı getirir.
             return new GetCarByIdQueryResult
             {
                 BrandID = values.BrandID,
