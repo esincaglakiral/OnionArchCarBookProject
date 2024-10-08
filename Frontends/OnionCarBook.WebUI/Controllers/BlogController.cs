@@ -27,5 +27,19 @@ namespace OnionCarBook.WebUI.Controllers
             }
             return View();
         }
+
+
+        public async Task<IActionResult> BlogDetail(int id)
+        {
+            ViewBag.v1 = "Bloglar";
+            ViewBag.v2 = "Blog Detayı ve Yorumlar";
+            ViewBag.blogid = id;
+
+            //var client = _httpClientFactory.CreateClient();
+            //var responseMessage2 = await client.GetAsync($"https://localhost:7060/api/Comments/CommentCountByBlog?id=" + id);
+            //var jsonData2 = await responseMessage2.Content.ReadAsStringAsync();
+            //ViewBag.commentCount = jsonData2;
+            return View();
+        }
     }
 }
