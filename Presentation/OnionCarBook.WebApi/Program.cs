@@ -19,6 +19,8 @@ using OnionCarBook.Application.Interfaces.TagCloudInterfaces;
 using OnionCarBook.Persistance.Repositories.TagCloudRepositories;
 using OnionCarBook.Application.Features.RepositoryPattern;
 using OnionCarBook.Persistance.Repositories.CommentRepositories;
+using OnionCarBook.Application.Interfaces.StatisticsInterfaces;
+using OnionCarBook.Persistance.Repositories.StatisticsRepositories;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -33,7 +35,7 @@ builder.Services.AddScoped(typeof(IBlogRepository), typeof(BlogRepository));
 builder.Services.AddScoped(typeof(ICarPricingRepository), typeof(CarPricingRepository));
 builder.Services.AddScoped(typeof(ITagCloudRepository), typeof(TagCloudRepository));
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(CommentRepository<>));
-
+builder.Services.AddScoped(typeof(IStatisticsRepository), typeof(StatisticsRepository));
 
 
 
