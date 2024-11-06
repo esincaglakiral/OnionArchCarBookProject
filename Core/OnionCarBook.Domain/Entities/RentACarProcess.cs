@@ -16,6 +16,7 @@ namespace OnionCarBook.Domain.Entities
         public int PickUpLocation { get; set; }
         public int DropOffLocation { get; set; }
 
+
         [Column(TypeName = "Date")]
         public DateTime PickUpDate { get; set; }
 
